@@ -3,7 +3,7 @@
  * @type {PluginCreator<postcssPresetEnv.pluginOptions> | postcssPresetEnv}
  */
 const postcssPresetEnv = require('postcss-preset-env')({
-  stage: 0,
+  stage: 0, // 실험적인 기능을 활성화
   features: {
     'nesting-rules': false,
     'color-mod-function': { unresolved: 'warn' },
