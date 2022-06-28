@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
     <style>
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      .grid-container {
+        @apply grid grid-cols-2 gap-1
+      }
+
+      .grid-item {
+        @apply flex justify-center items-center w-28 h-28 bg-orange-100
+      }
     </style>
-</head>
-<body>
-<div class="grid grid-cols-4 gap-4">
-    <div>01</div>
-    <div>02</div>
-    <div>03</div>
-    <div>04</div>
-    <div>05</div>
-    <div>06</div>
-    <div>07</div>
-    <div>08</div>
-    <div>09</div>
-</div>
-</body>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">01</div>
+      <div class="grid-item">02</div>
+      <div class="grid-item">03</div>
+      <div class="grid-item">04</div>
+      <div class="grid-item">05</div>
+      <div class="grid-item">06</div>
+      <div class="grid-item">07</div>
+      <div class="grid-item">08</div>
+      <div class="grid-item">09</div>
+    </div>
+  </body>
 </html>

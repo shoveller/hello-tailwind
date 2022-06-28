@@ -9,7 +9,7 @@ const postcssPresetEnv = require('postcss-preset-env')({
     'color-mod-function': { unresolved: 'warn' },
   },
   browsers: '> 1% in KR, not dead, ie 10',
-  autoprefixer: { grid: true },
+  autoprefixer: { grid: true }
 })
 
 /** @type {import('postcss').Config} */
@@ -19,5 +19,6 @@ module.exports = {
     require('tailwindcss/nesting')(require('postcss-nesting')),
     require('tailwindcss'),
     postcssPresetEnv,
+    require("cssnano")
   ],
 };
