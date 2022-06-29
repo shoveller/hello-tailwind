@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
     <style>
+      /*tailwind의 기본 스타일, 플러그인의 기본 스타일을 주입*/
       @tailwind base;
+      /*tailwind의 컴포넌트 스타일, 플러그인의 컴포넌트 스타일을 주입*/
       @tailwind components;
-      @tailwind utilities;
+      /*tailwind의 유틸리티 클래스, 플러그인의 유틸리티 클래스를 주입*/
+      /*@tailwind utilities;*/
 
       .grid-container {
         @apply grid grid-cols-2 gap-1
