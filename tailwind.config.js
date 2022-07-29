@@ -6,5 +6,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // 폼 플러그인을 활성화
+    require('@tailwindcss/forms'),
+  ],
 }
